@@ -95,5 +95,6 @@ FROM layoffs_data_cleaning
 WHERE total_laid_off IS NULL
 AND percentage_laid_off IS NULL;
 
+-- Retrieve records ------------------------------------------------------
 
-
+Select * FROM layoffs_data_cleaning
