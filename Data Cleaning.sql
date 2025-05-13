@@ -65,6 +65,9 @@ SET country = TRIM(TRAILING '.' FROM country);
 ALTER TABLE layoffs_data_cleaning
 MODIFY COLUMN `date` DATE;
 
+UPDATE layoffs_data_cleaning
+SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y');
+
 
 -- Populating data ----------------------------------------------------------------------------
 
